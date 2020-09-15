@@ -1,0 +1,32 @@
+{
+    "name": "hunghbm/fedex-bagisto",
+    "type": "library",
+    "description": "This extension used for calculating shipping rate with FeDex services.",
+    "keywords": ["fedex", "fedex-extension", "fedex-bagisto"],
+    "homepage": "https://github.com/Hunghbm/fedex-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HUNG HUYNH BA MANH",
+            "email": "huynhbamanhhungg@gmail.com",
+            "homepage": "https://github.com/Hunghbm",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hunghbm\\FedEx\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hunghbm\\FedEx\\Providers\\FedExServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "jeremy-dunn/php-fedex-api-wrapper": "^3.0"
+    }
+}
